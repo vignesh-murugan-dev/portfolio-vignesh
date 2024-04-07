@@ -3,9 +3,9 @@ import React from 'react'
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiExpress, SiMongodb, SiJavascript, SiTypescript, SiPython, SiPostgresql, SiAmazonaws, SiDocker, SiMysql, SiNginx } from "react-icons/si";
 
-const TechStackReveal = () => {
+const TechStackCard = () => {
     return (
-        <div className='rounded-lg bg-gradient-to-r from-slate-800  to-yellow-600 flex flex-col items-center justify-center w-full p-4 space-y-4'>
+        <div className='rounded-2xl bg-gradient-to-r from-slate-800  to-yellow-600 flex flex-col items-center justify-center w-full p-4 space-y-4'>
             <p className='text-xl font-semibold'>My Tech toolkit</p>
             <div className='flex gap-4 flex-wrap'>
                 <Image src={'/js.png'} alt="JS" width={50} height={50} />
@@ -56,4 +56,4 @@ const TechStackReveal = () => {
     )
 }
 
-export default TechStackReveal
+export default TechStackCard

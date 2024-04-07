@@ -1,10 +1,8 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
-import AboutCard from '@/components/AboutCard'
 import { BackgroundBoxes } from '@/components/BGBox'
 import ImageCard from '@/components/ImageCard'
-import TechStackReveal from '@/components/TechStackReveal'
+import TechStackCard from '@/components/TechStackCard'
 import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,7 +15,7 @@ export default function Home() {
         <BackgroundBoxes />
         <ImageCard />
       </div>
-      <TechStackReveal />
+      <TechStackCard />
       <Footer />
     </div>
   )
