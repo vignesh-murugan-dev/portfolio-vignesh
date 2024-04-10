@@ -4,6 +4,7 @@ import { BackgroundBoxes } from '@/components/BGBox'
 import ImageCard from '@/components/ImageCard'
 import TechStackCard from '@/components/TechStackCard'
 import Footer from '@/components/Footer'
+import ProjectCard from '@/components/ProjectCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
         <ImageCard />
       </div>
       <TechStackCard />
+      <ProjectCard />
       <Footer />
     </div>
   )
