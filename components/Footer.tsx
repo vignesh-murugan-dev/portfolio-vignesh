@@ -1,10 +1,9 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
 
-const Footer = () => {
-    return (
-        <div className='text-center'>Built with ❤️ by <Link href={'https://github.com/webdev-vignesh'} className='underline'>Vignesh Murugan</Link></div>
+export default function Footer() {
+    return(
+        <div className="py-2 border-t border-gray-500">
+            <p className="text-center text-sm">Made with ❤️ by <Link className="underline" href={'https://github.com/vignesh-murugan-dev'} target="_blank">Vignesh Murugan</Link></p>
+        </div>
     )
 }
-
-export default Footer

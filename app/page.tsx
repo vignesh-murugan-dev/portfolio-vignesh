@@ -1,24 +1,33 @@
-import { Inter } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import { BackgroundBoxes } from '@/components/BGBox'
-import ImageCard from '@/components/ImageCard'
-import TechStackCard from '@/components/TechStackCard'
-import Footer from '@/components/Footer'
-import ProjectCard from '@/components/ProjectCard'
-
-const inter = Inter({ subsets: ['latin'] })
+import ThingsIDoCard from "@/components/ThingsIDoCard";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Intro from "@/components/Intro";
+import Skills from "@/components/Skills/index";
+import AboutMe from "@/components/AboutMe";
+import Blogs from "@/components/Blogs/index";
+// import Experiences from "@/components/Experiences";
 
 export default function Home() {
   return (
-    <div className='space-y-10 px-6 my-10'>
-      <Navbar />
-      <div className='flex flex-col md:flex-row justify-between gap-5'>
-        <BackgroundBoxes />
-        <ImageCard />
+    <main className="relative">
+      <Header />
+      <div className="mb-10 p-8">
+        <div className="flex flex-col md:flex-row items-center justify-around mt-32 md:mt-44">
+          <Intro />
+          <ThingsIDoCard />
+        </div>
+        <div>
+          <AboutMe />
+          <Skills />
+        </div>
+        <div>
+          {/* <Experiences /> */}
+        </div>
+        <div>
+          <Blogs />
+        </div>
       </div>
-      <TechStackCard />
-      <ProjectCard />
       <Footer />
-    </div>
-  )
+    </main>
+  );
 }
