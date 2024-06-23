@@ -1,6 +1,7 @@
+import { ArticleCardProps } from "@/types";
 import dateParser from "@/utils/dateParser";
 
-export default function BlogsCard({article}) {
+export default function BlogsCard({article}: ArticleCardProps) {
     const thumbnail = (article['description'] as any).toString().match(/<img[^>]+src="([^">]+)"/)[1];
     return (
         <a href={article?.guid} target="_blank" className="hover:bg-custom-yellow hover:text-black flex flex-col justify-between border border-gray-500 rounded-md p-2 w-72 h-72">
