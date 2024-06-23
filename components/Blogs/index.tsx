@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BlogsCard from "./BlogsCard";
+import { ArticlesProps } from "@/types";
 
 async function getData() {
     const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@vignesh_murugan');
@@ -23,7 +24,7 @@ export default async function Blogs() {
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 w-full mt-10">
                 {
-                    articles?.map((article, index) => {
+                    articles?.map((article: ArticlesProps, index: number) => {
                         return <div key={index}>
                             <BlogsCard article={article} />
                         </div>
