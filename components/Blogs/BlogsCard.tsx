@@ -1,5 +1,4 @@
 import dateParser from "@/utils/dateParser";
-import Image from "next/image";
 
 export default function BlogsCard({article}) {
     const thumbnail = (article['description'] as any).toString().match(/<img[^>]+src="([^">]+)"/)[1];
